@@ -1,49 +1,33 @@
-//variables
+// set initial count
+let count=0;
 
-var decreaseBtn = document.getElementById("decrease");
-var increaseBtn = document.getElementById("increase");
-var resetBtn = document.getElementById("reset");
-var counterNumber = document.getElementById("counterNumber");
-var incrementer=0;
 
-//variables
+// select value and buttons
+const value = document.querySelector("#value");
+const btns = document.querySelectorAll(".btn");
 
-//Decrease button
-decreaseBtn.addEventListener("click", function(){
-    incrementer= incrementer-1;
-    counterNumber.innerHTML= incrementer;
-    if(incrementer<0){
-        counterNumber.style.color = "red"
-    }
-    else if (incrementer>0) {
-        counterNumber.style.color = "green"
-    }else {
-        counterNumber.style.color = "black"
-    }
+btns.forEach(function(btn){
+    btn.addEventListener("click", function(e){
+        e.currentTarget.classList
+        const styles = e.currentTarget.classList;
+        if(styles.contains("decrease")){
+            count--;
+        }
+        else if(styles.contains("increase")){
+            count++;
+        }
+        else {
+            count=0;
+        }
+
+        if(count>0){
+            value.style.color="green"
+        } else if(count<0){
+            value.style.color="red"
+        }
+        else{
+            value.style.color="black"
+        }
+        value.textContent=count
+    })
 })
-//Decrease button
-
-//Increase
-increaseBtn.addEventListener("click", function(){
-    incrementer= incrementer+1;
-    counterNumber.innerHTML= incrementer;
-    if(incrementer<0){
-        counterNumber.style.color = "red"
-    }
-    else if (incrementer>0) {
-        counterNumber.style.color = "green"
-    } else {
-        counterNumber.style.color = "black"
-    }
-})
-//Increase
-
-//Reset
-resetBtn.addEventListener("click", function(){
-    incrementer= 0;
-    counterNumber.innerHTML= incrementer;
-    counterNumber.style.color = "black"
-})
-//Reset
-
-
