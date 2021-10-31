@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:azure;
+    font-family: poppins;
+}
+
+.container {
+    margin: 5vh auto;
+    text-align: center;
+    height: 20vh;
+    width: 40vw;
+}
+
+.person-container {
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(0, 255, 255, 0.267);
+    padding: 0.5em 0.3em;
+}
+
+h1 {
+    margin-bottom: 2em;
+    color: deeppink;
+}
+
+img {
+    width: 15em;
+    height: 15em;
+    border: 1px solid cyan;
+    border-radius: 100%;
+}
+
+h2 {
+    color: deeppink;
+}
+
+.job-title {
+    color: indigo;
+    margin-bottom: 0.5em;
+}
+
+#info{
+    height:11em ;
+    overflow: hidden;
+}
+
+i:first-child {
+    font-size: 1.7em;
+    margin-right:0.25em ;
+}
+i:nth-child(2) {
+    font-size: 1.7em;
+    margin-left:0.25em ;
+    margin-top: 0.25em;
+}
+
+button {
+    background-color: cadetblue;
+    color: white;
+    margin-top: 1em;
+    padding: 0.3em 0.8em;
+    border-radius: 0.3em;
+}
+
+.person-second {
+    display: none;
+}
+
+.person-third {
+    display: none;
+}
