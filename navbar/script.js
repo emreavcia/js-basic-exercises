@@ -26,7 +26,7 @@ crossIcon.addEventListener("click", function(){
     
 });
 
-//to avoid mistakes, onrisize function created, should fine better idea 
+//to avoid mistakes, onrisize function created, should fine a better idea 
 
 window.onresize = function(){
     if(mediaQueryBig.matches){
